@@ -26,8 +26,8 @@ import (
 
 // These constants are some global variables that are used throughout the code.
 const (
-	Debug   = false // add additional log messages
-	Verbose = false // add extra log message output
+	Debug   = true // add additional log messages
+	Verbose = true // add extra log message output
 )
 
 // set at compile time
@@ -37,6 +37,12 @@ var (
 )
 
 func main() {
+
+	// TODO Remove
+	program = "mgmt"
+	version = "1.1.1"
+	// End of remove
+
 	flags := mgmt.Flags{
 		Debug:   Debug,
 		Verbose: Verbose,
